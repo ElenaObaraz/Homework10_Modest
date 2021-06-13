@@ -1,0 +1,122 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.header-wrapper {
+  width: 100%;
+  background: #1d2126;
+}
+.top-header {
+  width: 1140px;
+  height: 80px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top-header ul.header-links {
+  width: 630px;
+  display: flex;
+  justify-content: space-between;
+}
+.top-header ul.header-links li {
+  border: 2px solid #1d2126;
+  border-radius: 3px;
+}
+.top-header ul.header-links li:hover {
+  border: 2px solid #5b6168;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.top-header ul.header-links li a {
+  text-decoration: none;
+  font: 500 14px "Open Sans", sans-serif;
+  color: #a4aead;
+}
+.top-header ul.header-links li a:active {
+  border: 2px solid #23b7a4;
+  border-radius: 3px;
+  color: #23b7a4;
+  cursor: pointer;
+}
+
+.content-wrapper .splide .splide__track ul.splide__list li.splide__slide img {
+  width: 100%;
+  height: 100vh;
+}
+.content {
+  width: 1140px;
+  margin: auto;
+  position: relative;
+}
+.content h1 {
+  font: bold 36px "Open Sans", sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  position: absolute;
+  content: "";
+  top: -310px;
+  left: 0;
+  margin-bottom: 30px;
+}
+.content p {
+  font: 400 16px "Open Sans", sans-serif;
+  color: #ccd0d7;
+  line-height: 25px;
+  position: absolute;
+  content: "";
+  top: -240px;
+  left: 0;
+  margin-bottom: 45px;
+}
+.button {
+  width: 1140px;
+  margin: auto;
+  margin-top: -145px;
+}
+.button button {
+  margin-right: 10px;
+
+  background: none;
+  border: 2px solid #ffffff;
+  border-radius: 4px;
+  padding: 15px 20px;
+}
+.button button a {
+  font: 400 14px "Open Sans", sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+}
+.button button:hover {
+  background: #23b7a4;
+  border: none;
+}
+
+.splide__pagination__page {
+  background: none;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+}
+.splide__pagination__page.is-active {
+  background: #ffffff;
+}
+.splide__pagination {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  justify-content: flex-end;
+  margin-right: 200px;
+}
+.splide__pagination li {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
